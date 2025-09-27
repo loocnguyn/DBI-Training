@@ -1,0 +1,1 @@
+select model,year from Cars where colour ='Black'

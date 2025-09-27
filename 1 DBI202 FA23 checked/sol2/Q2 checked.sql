@@ -1,0 +1,3 @@
+SELECT C.MODEL, C.YEAR
+FROM CARS C
+WHERE C.colour = 'Black'

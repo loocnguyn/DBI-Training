@@ -1,0 +1,6 @@
+SELECT DPM.Dname, E.Lname, E.Fname, PRJ.Pname
+FROM WORKS_ON WO
+JOIN  EMPLOYEE E ON E.Ssn = WO.Essn
+JOIN PROJECT PRJ ON PRJ.Pnumber = WO.Pno
+JOIN DEPARTMENT DPM ON DPM.Dnumber = E.Dno
+ORDER BY DPM.Dname ASC, E.Lname ASC, E.Fname ASC

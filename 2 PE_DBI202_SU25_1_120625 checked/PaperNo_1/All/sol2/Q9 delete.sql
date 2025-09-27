@@ -1,0 +1,7 @@
+DELETE PRJ
+FROM PROJECT PRJ
+WHERE PRJ.Pnumber not in(
+	SELECT WO.Pno
+	from WORKS_ON WO
+
+)
